@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolución Normativa - Protección de Líderes Colombia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: white;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #1a365d;
+            margin-bottom: 10px;
+            font-size: 2.2em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #4a5568;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #1a365d;
+            transform: translateX(-50%);
+        }
+        
+        .president-section {
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .president-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .president-name {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #1a365d;
+        }
+        
+        .period {
+            background: #f7fafc;
+            color: #4a5568;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-left: 15px;
+        }
+        
+        .years-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .year-block {
+            background: #f7fafc;
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 4px solid #1a365d;
+            transition: transform 0.2s ease;
+        }
+        
+        .year-block:hover {
+            transform: translateY(-2px);
+        }
+        
+        .pastrana-block { border-left-color: #1a365d; }
+        .uribe-block { border-left-color: #1a365d; }
+        .santos-block { border-left-color: #1a365d; }
+        .duque-block { border-left-color: #1a365d; }
+        .petro-block { border-left-color: #1a365d; }
+        
+        .year-title {
+            font-weight: bold;
+            color: #1a365d;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+        
+        .norm-item {
+            margin-bottom: 12px;
+            padding: 15px;
+            background: white;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .norm-title {
+            font-weight: bold;
+            color: #1a365d;
+            font-size: 0.95em;
+            margin-bottom: 5px;
+        }
+        
+        .norm-description {
+            color: #4a5568;
+            font-size: 0.85em;
+            line-height: 1.4;
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+            padding: 30px;
+            background: #f7fafc;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1a365d;
+        }
+        
+        .stat-label {
+            color: #4a5568;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .president-header {
+                justify-content: flex-start;
+                padding-left: 40px;
+            }
+            
+            .years-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Evolución de la Normatividad sobre Protección de Líderes</h1>
+        <p class="subtitle">Colombia 1998-2023: De la Ley 418 a la Paz Total</p>
+        
+        <div class="timeline">
+            <!-- ANDRÉS PASTRANA -->
+            <div class="president-section">
+                <div class="president-header">
+                    <div class="president-name">ANDRÉS PASTRANA</div>
+                    <div class="period">1998-2002</div>
+                </div>
+                <div class="years-container">
+                    <div class="year-block pastrana-block">
+                        <div class="year-title">1999</div>
+                        <div class="norm-item">
+                            <div class="norm-title">Ley 548 de 1999</div>
+                            <div class="norm-description">Prorroga la vigencia de la Ley 418 de 1997</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ÁLVARO URIBE -->
+            <div class="president-section">
+                <div class="president-header">
+                    <div class="president-name">ÁLVARO URIBE VÉLEZ</div>
+                    <div class="period">2002-2010</div>
+                </div>
+                <div class="years-container">
+                    <div class="year-block uribe-block">
+                        <div class="year-title">2002-2003</div>
+                        <div class="norm-item">
+                            <div class="norm-title">Ley 782 de 2002</div>
+                            <div class="norm-description">Prorroga y modifica la Ley 418 de 1997</div>
+                        </div>
+                        <div class="norm-item">
+                            <div class="norm-title">Decreto 2788 de 2003</div>
+                            <div class="norm-description">Conforma el Comité de Reglamentación y Evaluación de Riesgos (CRER)</div>
+                        </div>
+                    </div>
+                    <div class="year-block uribe-block">
+                        <div class="year-title">2006-2010</div>
+                        <div class="norm-item">
+                            <div class="norm-title">Ley 1106 de 2006</div>
+                            <div class="norm-description">Prorroga la vigencia de la Ley 418 de 1997</div>
+                        </div>
+                        <div class="norm-item">
+                            <div class="norm-title">Decreto 2862 de 2007</div>
+                            <div class="norm-description">Reglamenta el Comité Interinstitucional de Alertas Tempranas (CIAT)</div>
+                        </div>
+                        <div class="norm-item">
+                            <div class="norm-title">Decreto 2780 de 2010</div>
+                            <div class="norm-description">Crea y reglamenta la Comisión Intersectorial de Alertas Tempranas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JUAN MANUEL SANTOS -->
+            <div class="president-section">
+                <div class="president-header">
+                    <div class="president-name">JUAN MANUEL SANTOS</div>
+                    <div class="period">2010-2018</div>
+                </div>
+                <div class="years-container">
+                    <div class="year-block santos-block">
+                        <div class="year-title">2011</div>
+                        <div class="norm-item">
+                            <div class="norm-title">Decreto 4065 de 2011</div>
+                            <div class="norm-description">Crea la Unidad Nacional de Protección (UNP)</div>
+                        </div>
+                        <div class="norm-item">
+                            <div class="norm-title">Ley 1448 de 2011</div>
+                            <div class="norm-description">Ley de Víctimas - Medidas de atención y reparación integral</div>
+                        </div>
+                        <div class="norm-item">
+                            <div class="norm-title">Decreto 4912 de 2011</div>
+                            <div class="norm-description">Organiza el Programa de Prevención y Protección</div>
+                        </div>
+                    </div>
+                    <div class="year-block santos-block">
+                        <div class="year-title">2014-2016</div>
+                        <div class="norm-item">
+                            <div class="norm-title">Decreto 870 de 2014</div>
+                            <div class="norm-description">Crea la Mesa Única Nacional</div>
+                        </div>
+                        <div class="norm-item">
+                            <div class="norm-title">Decreto 1314 de 2016</div>
+                            <div class="norm-description">Comisión Intersectorial de Garantías para Mujeres Lideresas</div>
+                        </div>
+                    </div>
+                    <div class="year-block santos-block">
+                        <div class="year-title">2017-2018</div>
+                        <div class="norm-item">
+                            <div class="norm-title">Decreto 154 de 2017</div>
+                            <div class="norm-description">Comisión Nacional de Garantías de Seguridad (Acuerdo de Paz)</div>
+                        </div>
+                        <div class="norm-item">
+                            <div class="norm-title">Ley 1908 de 2018</div>
+                            <div class="norm-description">Fortalece investigación de organizaciones criminales</div>
+                        </div>
+                        <div class="norm-item">
+                            <div class="norm-title">Decreto 660 de 2018</div>
+                            <div class="norm-description">Programa Integral de Seguridad y Protección para Comunidades</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IVÁN DUQUE -->
+            <div class="president-section">
+                <div class="president-header">
+                    <div class="president-name">IVÁN DUQUE MÁRQUEZ</div>
+                    <div class="period">2018-2022</div>
+                </div>
+                <div class="years-container">
+                    <div class="year-block duque-block">
+                        <div class="year-title">2018-2021</div>
+                        <div class="norm-item">
+                            <div class="norm-title">Decreto 2137 de 2018</div>
+                            <div class="norm-description">Comisión Intersectorial para el Plan de Acción Oportuna (PAO)</div>
+                        </div>
+                        <div class="norm-item">
+                            <div class="norm-title">CONPES 4063 de 2021</div>
+                            <div class="norm-description">Comisión Nacional de Seguimiento a la Política Pública de Garantías</div>
+                        </div>
+                        <div class="norm-item">
+                            <div class="norm-title">Ley 2078 de 2021</div>
+                            <div class="norm-description">Prorroga por 10 años la Ley de Víctimas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GUSTAVO PETRO -->
+            <div class="president-section">
+                <div class="president-header">
+                    <div class="president-name">GUSTAVO PETRO URREGO</div>
+                    <div class="period">2022-Presente</div>
+                </div>
+                <div class="years-container">
+                    <div class="year-block petro-block">
+                        <div class="year-title">2022-2023</div>
+                        <div class="norm-item">
+                            <div class="norm-title">Ley 2272 de 2022</div>
+                            <div class="norm-description">Define la política de Paz Total como política de Estado</div>
+                        </div>
+                        <div class="norm-item">
+                            <div class="norm-title">Decreto 0181 de 2023</div>
+                            <div class="norm-description">Oferta institucional para prevención y protección de líderes</div>
+                        </div>
+                        <div class="norm-item">
+                            <div class="norm-title">Directiva 0008 Fiscalía</div>
+                            <div class="norm-description">Actualiza lineamientos de investigación de delitos contra defensores</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number pastrana">3</div>
+                <div class="stat-label">Normas Pastrana</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number uribe">6</div>
+                <div class="stat-label">Normas Uribe</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number santos">15</div>
+                <div class="stat-label">Normas Santos</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number duque">5</div>
+                <div class="stat-label">Normas Duque</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number petro">3</div>
+                <div class="stat-label">Normas Petro</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
